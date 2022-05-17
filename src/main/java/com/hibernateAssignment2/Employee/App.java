@@ -14,7 +14,6 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 import org.hibernate.service.ServiceRegistry;
 
-import com.hibernate.assignment1.Movie;
 
 import EmployeeAssest.Assets;
 
@@ -68,6 +67,7 @@ public class App
 				a1.setAssetsPrice(AssetsPrice);
 				add(E1 , a1);
 				System.out.println("Details added");
+				break;
 				
 	    	case 2:
 	    		System.out.println("Enter 1 for getting the Employee details");
@@ -82,41 +82,41 @@ public class App
 		    		System.out.println("Enter the Employee Id : ");
 		    		Integer getId = sc.nextInt();
 		    		System.out.println(getDetails(getId));
-		    		return;
+		    		break;
 		    	case 2:
 		    		System.out.println(Max());
-		    		return;
+		    		break;
 		    	case 3:
 		    		System.out.println(CountEmployee());
-		    		return;
+		    		break;
 		    	case 4:
 		    		Iterator itr = EmployeeDetails().iterator();
 					while(itr.hasNext()) {
 							System.out.println(itr.next());
 						}	
-					return;
+					break;
 		    	case 5:
 		    		System.out.print("Enter the Employee id:");
 		    		Integer empId = sc.nextInt();
 		    		EmployeeIdDetails(empId);
-		    		return;
+		    		break;
 		    	default:
 		    		System.out.println("Enter the valid Number!");
-		    		return;
+		    		break;
 		    	}
 	    	case 3:
 	    		System.out.print("Enter the Employee id:");
 	    		Integer empId2 = sc.nextInt();
 	    		updatePassword(empId2);
-	    		return;
+	    		break;
 	    	case 4:
 	    		System.out.print("Enter the Employee id:");
 	    		Integer empId3 = sc.nextInt();
 	    		deleteEmployee(empId3);
-	    		return;
+	    		break;
 	    	default:
 	    		System.out.println("Enter the valid number.");
-	    		return;
+	    		break;
 	    	
 	    	}
 
